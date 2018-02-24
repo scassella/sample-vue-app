@@ -7,5 +7,12 @@
 </template>
 
 <script>
-    export default {}
+    export default {
+        data() {
+            return {
+                name: 'sara'
+            }
+        }
+    }
 </script>
+<style lang="scss"></style>
