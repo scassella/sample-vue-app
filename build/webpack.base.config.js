@@ -4,23 +4,24 @@ const config = {
     entry: {
         app: path.resolve(__dirname, '../src/client-entry.js')
     },
-    // module: { //uncomment to enable eslint.
-    //     rules: [
-    //         {
-    //             enforce: 'pre',
-    //             test: /(\.js$)/,
-    //             loader: 'eslint-loader',
-    //             exclude: /node_modules/,
-    //             options: {
-    //                 semi: 'always'
-    //             }
-    //         }
-    //     ]
-    // },
-    resolve: {
-        alias: {
-            vue: 'vue/dist/vue.js'
-        }
+    module: {
+        rules: [
+            // {
+            //     enforce: 'pre',
+            //     test: /(\.js$)/|/(\.vue$)/,
+            //     loader: 'eslint-loader',
+            //     exclude: /node_modules/
+            // },
+            {
+                test: /\.vue$/,
+                loader: 'vue-loader'
+            },
+            {
+                test: /\.js$/,
+                loader: 'babel-loader', //this handles the JS functionality that is not supported in all browsers (such as arrow functions)
+                exclude: /node_modules/
+            }
+        ]
     },
     output: {
         path: path.resolve(__dirname, '../dist'),

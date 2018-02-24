@@ -1,0 +1,14 @@
+{
+  "presets": [
+    [
+      "es2015", //defines that we are using es6
+      {
+        "modules": false
+      }
+    ],
+    "stage-2"
+  ],
+  "ignore": [
+    "node_modules/*"
+  ]
+}

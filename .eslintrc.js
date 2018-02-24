@@ -1,5 +1,6 @@
 module.exports = {
     root: true, //makes it so the rules apply to the whole project
+    parser: 'babel-eslint',
     parserOptions: {
         sourceType: 'module'
     },
