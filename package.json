@@ -1,0 +1,20 @@
+{
+  "name": "sara-app",
+  "version": "1.0.0",
+  "description": "Sara's Vue Application - February 23, 2018",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.2",
+    "vue": "^2.5.13"
+  },
+  "devDependencies": {
+    "webpack": "^3.11.0"
+  }
+}

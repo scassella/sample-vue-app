@@ -1,1 +1,1 @@
-# sample-vue-app
+Sara's Vue Application - February 23, 2018
